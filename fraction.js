@@ -8,21 +8,23 @@ class addition(){
     return(this.c);
   }
 }
+            
 function input(){
   a = parseInt(prompt("Enter 1st number");
-  b=parseInt(prompt("Enter 2nd number");
+  b = parseInt(prompt("Enter 2nd number");
   return[a,b];
 }
 
-function output(s)
-console.log("The sum of %d and %d,s.a,s.b,s.c);
+function output(s){
+  console.log("The difference between %d and %d is %d",s.a,s.b,s.c);
 }
+
 function main(){
-  let a=0;
-  let b=0;
+  let a = 0;
+  let b = 0;
   [a,b] = input();
-  let s = new addition(a,b)
+  let s = new subract(a,b);
   output(s);
 }
-            
+
 main();
