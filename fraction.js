@@ -1,15 +1,14 @@
-const prompt = require('prompt-sync)();
-class subract(){
+class addition(){
   constructor(a,b){
-    this.a = a;
-    this.b = b;
-    this.c = a-b;
+    this.a=a;
+    this.b=b;
+    this.c=a+b;
   }
   get_c(){
     return(this.c);
   }
 }
-
+            
 function input(){
   a = parseInt(prompt("Enter 1st number");
   b = parseInt(prompt("Enter 2nd number");
