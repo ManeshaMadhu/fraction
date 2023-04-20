@@ -15,7 +15,7 @@ function input(){
 }
 
 function output(s)
-console.log("The difference between %d and %d,s.a,s.b,s.c);
+console.log("The sum of %d and %d,s.a,s.b,s.c);
 }
 function main(){
   let a=0;
@@ -25,3 +25,4 @@ function main(){
   output(s);
 }
             
+main();
