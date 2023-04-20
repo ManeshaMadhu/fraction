@@ -1,30 +1,59 @@
-class addition(){
-  constructor(a,b){
-    this.a=a;
-    this.b=b;
-    this.c=a+b;
+class Fraction {
+  constructor(numerator, denominator) {
+    this.numerator = numerator;
+    this.denominator = denominator;
   }
-  get_c(){
-    return(this.c);
+
+
+
+  divide(other) {
+    const numerator = this.numerator * other.denominator;
+    const denominator = this.denominator * other.numerator;
+    return new Fraction(numerator, denominator);
+  }  
+  add(other) {
+    const newNumerator = this.numerator * other.denominator + this.denominator * other.numerator;
+    const newDenominator = this.denominator * other.denominator;
+    return new Fraction(newNumerator, newDenominator);
   }
 }
-            
-function input(){
-  a = parseInt(prompt("Enter 1st number");
-  b = parseInt(prompt("Enter 2nd number");
-  return[a,b];
+
+class Fraction {
+  constructor(numerator, denominator) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  multiply(otherFraction) {
+    let newNumerator = this.numerator * otherFraction.numerator;
+    let newDenominator = this.denominator * otherFraction.denominator;
+    return new Fraction(newNumerator, newDenominator);
+  }
 }
 
-function output(s){
-  console.log("The difference between %d and %d is %d",s.a,s.b,s.c);
+
+  subtract(otherFraction) {
+    const newNumerator = this.numerator * otherFraction.denominator - otherFraction.numerator * this.denominator;
+    const newDenominator = this.denominator * otherFraction.denominator;
+    return new Fraction(newNumerator, newDenominator);
+  }
 }
 
-function main(){
-  let a = 0;
-  let b = 0;
-  [a,b] = input();
-  let s = new subract(a,b);
-  output(s);
-}
+class Fraction {
+  constructor(numerator, denominator) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
 
-main();
+  compare(other) {
+    const num1 = this.numerator * other.denominator;
+    const num2 = other.numerator * this.denominator;
+    if (num1 < num2) {
+      return -1;
+    } else if (num1 > num2) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+}
